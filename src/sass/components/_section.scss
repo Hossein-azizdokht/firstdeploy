@@ -1,0 +1,119 @@
+section {
+  
+  .section-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    position: relative;
+    text-shadow: 0 0 14px white;
+
+    &.has-bullet {
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 500px;
+        background-color: transparent;
+        border: 3px solid $base-color;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 8px;
+      }
+    }
+
+    &.has-dots {
+      &::after {
+        content: "";
+        // background: url("/assets/images/dots.svg");
+        width: 107px;
+        height: 100px;
+        position: absolute;
+        z-index: -1;
+        top: -25px;
+        right: -78px;
+        opacity: 0.6;
+        @media screen and (max-width:768px) {
+          display: none;
+        }
+      }
+    }
+
+    .title-sublink {
+      margin-right: 1rem;
+      font-weight: 300 !important;
+      font-size: 13px;
+      font-family: "IranYekan";
+      padding-right: 1rem;
+      border-right: 2px solid #ffffff28;
+      &:hover {
+        color: orange;
+      }
+      svg {
+        font-size: 1rem;
+        margin-right: 0.2rem;
+        margin-top: -2px;
+        opacity: 0.5;
+      }
+      @media only screen and (max-width: 768px) {
+        display: block;
+        margin-top: 16px;
+        border: none;
+      }
+    }
+    &.on-light {
+      color: inherit;
+    }
+    &.on-dark {
+      color: #fff;
+    }
+  }
+  &.news {
+    .has-bullet {
+      &:before {
+        animation: bomb 2s ease-in-out infinite;
+      }
+      @keyframes bomb {
+        0% {
+          box-shadow: 0 0 0 0 rgba($base-color, 0.226),
+            0 0 0 0 rgba($base-color, 0.288);
+        }
+        30% {
+          box-shadow: 0 0 0 8px rgba(rgb(255, 184, 52), 0.2),
+            0 0 0 0 rgba($base-color, 0.3);
+        }
+        60% {
+          box-shadow: 0 0 0 10px rgba($base-color, 0.1),
+            0 0 0 20px rgba($base-color, 0.1);
+        }
+        100% {
+          box-shadow: 0 0 0 10px rgba($base-color, 0),
+            0 0 0 40px rgba($base-color, 0);
+        }
+      }
+    }
+  }
+
+  &.hero,
+  &.newsList {
+    padding: 0;
+  }
+}
+
+a.download {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -45px;
+  font-size: 14px;
+  background: #9f9f9f;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 8px;
+  color: #fff !important;
+  border-radius: 26px;
+  height: 31px;
+  line-height: 17px;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: rgb(55, 136, 184);
+  }
+}

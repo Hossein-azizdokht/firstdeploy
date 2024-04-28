@@ -1,0 +1,132 @@
+.card {
+  padding: 2rem 2rem 3rem 2rem;
+  text-align: center;
+  border-radius: $base-radius;
+  border: none;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 5px -4px rgba(0, 0, 0 , 0.05);
+  @include transition(0.2s);
+  &.hoverAnim:hover {
+    box-shadow: 0 32px 32px -15px rgba($base-text-color, 0.2);
+    transform: scale(1.05);
+    transform-origin: bottom;
+    .card-icon {
+      transform: scale(1.1) translateY(-5px);
+    }
+  }
+  &-icon {
+    @include transition(0.6s);
+    & > img {
+      width: 75px;
+    }
+  }
+  &-title {
+    color: $base-color;
+    font-size: 1rem;
+    margin: 0.2rem 0;
+  }
+  &-desc {
+    color: $base-text-light-color;
+    text-align: justify;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  &.flex-horizontal {
+    padding: 17px;
+    text-align: right;
+    .card-desc {
+      text-align: right;
+    }
+    .card-icon {
+      margin-left: 1rem;
+      & > img {
+        width: 70px;
+      }
+    }
+    & > a {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &.thumbnail-card {
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all 0.2s ease-in;
+    text-align: right;
+    .card-icon {
+      border-radius: $base-radius;
+      overflow: hidden;
+      position: relative;
+      background: #eee;
+      display: flex;
+      img {
+        @include transition(all 0.5s);
+      }
+      .highlight {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: #0071d1;
+        opacity: 0.9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 2rem;
+        opacity: 0;
+        @include transition(0.2s);
+      }
+      img {
+        border-radius: 13px;
+        transition: transform 0.2s ease-in;
+        max-height: 100%;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+    }
+    .card-title {
+      font-size: 0.85rem;
+      text-align: right;
+      margin: 0.5rem 0;
+      min-height: 5rem;
+      color: inherit;
+      border-bottom: 1px solid rgba($base-text-light-color, 0.5);
+    }
+    .date {
+      font-size: 11px;
+      color: $base-text-light-color;
+      svg {
+        font-size: 1rem;
+        margin-left: 0.3rem;
+      }
+    }
+    &:hover {
+      transform: none;
+      .card-title {
+        color: $base-color;
+      }
+      .card-icon {
+        transform: none;
+        img {
+          transform: translate(50%, -50%)scale(1.3);
+        }
+        .highlight {
+          opacity: 0.8;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width:992px) {
+    .pr-2 {
+      padding: 0;
+    }
+  }
+}

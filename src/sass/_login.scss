@@ -1,0 +1,98 @@
+section.login {
+  // height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  background: #efefef;
+  background-size: cover;
+  box-shadow: 0 0 0 100rem rgb(23 31 116 / 66%) inset;
+  background-color: #4c6fbf;
+  transition: all 0.7s ease-in;
+
+  .card {
+    // position: fixed;
+    width: 400px;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(7px);
+    background-color: rgba(0, 0, 0, 0.13);
+    box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.678) inset;
+    animation: cardShadowLight infinite 10s linear;
+    // border: 1px solid rgb(255 255 255 / 49%);
+  }
+
+  @keyframes cardShadowLight {
+    25% {
+      box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.678) inset;
+    }
+    50% {
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.678) inset;
+    }
+    75% {
+      box-shadow: -1px 0 0 0 rgba(255, 255, 255, 0.678) inset;
+    }
+    100% {
+      box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.678) inset;
+    }
+  }
+  .card-body {
+    & > p {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.5px;
+    }
+    div {
+      color: #979797;
+    }
+  }
+
+  hr {
+    opacity: 0.5;
+    color: #838383;
+  }
+
+  .form-control {
+    background-color: #ffffff1a;
+    border: none;
+  }
+
+  .form-group {
+    text-align: right;
+
+    label,
+    input {
+      color: #ccc;
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      text-align: center;
+    }
+
+    input {
+      text-align: center;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+
+      &[name="password"] {
+        letter-spacing: 3px;
+        font-size: 28px;
+        height: 42px;
+      }
+    }
+  }
+
+  button {
+    margin-left: 0.5rem;
+  }
+
+  .btn {
+    height: 38px;
+  }
+}

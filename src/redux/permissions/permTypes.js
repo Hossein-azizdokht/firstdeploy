@@ -1,0 +1,1 @@
+const ADD_PERM = 'ADD_PERM';

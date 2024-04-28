@@ -1,0 +1,41 @@
+.select-theme {
+  &.error &>div {
+    border-color: red;
+  }
+
+  &>div {
+    // border-color: rgb(192, 197, 221);
+    border-radius: 7px;
+    padding: 0;
+    min-height: 43px;
+
+    &>div {
+      &>div.css-1rhbuit-multiValue {
+        background-color: #eef2ff;
+        border-radius: 6px;
+        padding: 2px;
+        border: 1px solid #d8ddf3;
+
+        &>div:first-child {
+          padding: 3px 5px;
+          // color: rgb(75, 90, 163)
+        }
+
+        svg {
+          // color: #757da7;
+        }
+      }
+
+      &>div {
+        // color: #8a96c7;
+        // font-weight: 700;
+      }
+    }
+  }
+
+  &.smallMode {
+    &>div {
+      min-height: 36px;
+    }
+  }
+}

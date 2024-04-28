@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="185" height="128" viewBox="0 0 185 128">
+  <g id="cis" transform="translate(6036 3489)">
+    <g id="Group_1203" data-name="Group 1203">
+      <g id="data-entru-icon" transform="translate(-5987.422 -3489.422)">
+        <g id="invisible_box" data-name="invisible box">
+          <rect id="Rectangle_153" data-name="Rectangle 153" width="86" height="86" transform="translate(0.422 0.422)" fill="none"/>
+          <rect id="Rectangle_154" data-name="Rectangle 154" width="86" height="86" transform="translate(0.422 0.422)" fill="none"/>
+          <rect id="Rectangle_155" data-name="Rectangle 155" width="86" height="86" transform="translate(0.422 0.422)" fill="none"/>
+        </g>
+        <g id="icons_Q2" data-name="icons Q2" transform="translate(5.638 11.782)">
+          <path id="Path_155" data-name="Path 155" d="M76.467,19.9,39.906,6,3.345,19.9a1.545,1.545,0,1,0,0,3.09L39.906,36.9l36.561-13.9a1.545,1.545,0,0,0,0-3.09ZM39.906,29.516,18.45,21.448l21.456-8.068,21.456,8.068Z" transform="translate(-1.8 -6)" fill="#f35e2d"/>
+          <path id="Path_156" data-name="Path 156" d="M72.909,22.19,39.781,35.235,6.653,22.19a3.476,3.476,0,1,0-2.4,6.523l35.531,13.9,35.531-13.9a3.476,3.476,0,1,0-2.4-6.523Z" transform="translate(-1.675 5.446)" fill="#fff" opacity="0.38"/>
+          <path id="Path_157" data-name="Path 157" d="M72.909,32.19,39.781,45.235,6.653,32.19a3.476,3.476,0,0,0-2.4,6.523l35.531,13.9,35.531-13.9a3.476,3.476,0,1,0-2.4-6.523Z" transform="translate(-1.675 12.611)" fill="#fff" opacity="0.38"/>
+        </g>
+      </g>
+      <text id="سیستم_مدیریت_صدور_کارت" data-name="سیستم‌مدیریت‌صدور‌کارت" transform="translate(-6036 -3391)" fill="#fff" font-size="17" font-family="IRANYekanFaNum-Bold, 'IRANYekan\(FaNum\)'" font-weight="700"><tspan x="0" y="0">سیستم‌مدیریت‌صدور‌کارت</tspan></text>
+      <text id="Card_Issuing_System" data-name="Card Issuing System" transform="translate(-6015 -3365)" fill="rgba(255,255,255,0.43)" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Card Issuing System</tspan></text>
+    </g>
+  </g>
+</svg>

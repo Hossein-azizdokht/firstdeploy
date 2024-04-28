@@ -1,0 +1,719 @@
+//buttons---------------
+.btn-primary {
+  background-color: $base-color;
+  border-color: $base-color;
+
+  &:hover {
+    background-color: darken($base-color, 10%);
+    border-color: darken($base-color, 10%);
+  }
+}
+
+.MuiGrid-container {
+  width: 100% !important;
+  margin-left: auto;
+}
+
+.btn {
+  border-radius: 100px;
+  svg {
+    font-size: 20px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+  }
+}
+
+//grid
+.MuiDataGrid-root {
+  font-family: inherit !important;
+  font-size: 12px !important;
+  border-radius: 0;
+}
+
+.MuiDataGrid-virtualScroller {
+  margin-top: 30px !important;
+}
+
+.MuiDataGrid-columnHeaders {
+  min-height: 40px !important;
+  max-height: 40px !important;
+  line-height: 40px !important;
+  border-bottom: 1px solid rgb(211, 219, 255);
+  background: #f0f3ff;
+  border-radius: 0 !important;
+}
+
+.MuiDataGrid-columnHeaderTitleContainerContent {
+  margin: auto;
+
+  & > span.MuiCheckbox-root {
+    padding: 4px;
+  }
+}
+
+.MuiDataGrid-row.Mui-selected {
+  background-color: rgb(255 241 218);
+}
+
+.MuiTablePagination-actions {
+  button {
+    transform: rotate(180deg);
+  }
+}
+
+.MuiPagination-root {
+  direction: rtl;
+
+  .MuiPaginationItem-root {
+    background: #f5f5f5;
+    border-radius: 5px;
+    font-family: "IRANYekan";
+    color: gray;
+  }
+}
+
+.MuiDataGrid-row,
+.MuiDataGrid-cell,
+.MuiDataGrid-columnHeaders {
+  min-height: 30px !important;
+  height: 30px;
+}
+
+.MuiPaginationItem-previousNext {
+  transform: rotate(180deg);
+}
+
+.MuiTablePagination-displayedRows {
+  font-family: "IRANYekan" !important;
+  font-size: inherit !important;
+}
+
+.MuiInputLabel-root {
+  font-family: "IRANYekan" !important;
+  font-size: inherit !important;
+  left: unset;
+  right: 0 !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell:focus-within {
+  outline: none !important;
+  text-align: right;
+}
+
+.MuiCheckbox-root {
+  padding: 0 8px;
+}
+
+.MuiInputBase-root svg {
+  right: unset;
+  left: 7px;
+}
+
+.tagWrapper {
+  .MuiOutlinedInput-root {
+    flex-wrap: wrap;
+
+    .MuiButtonBase-root {
+      margin: 17px 2px -10px 2px;
+    }
+  }
+}
+
+.MuiPaper-root {
+  .MuiAlert-message {
+    font-family: "IRANYekan";
+  }
+
+  .MuiAlert-icon {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+}
+
+.MuiFormControl-root {
+  .MuiOutlinedInput-root {
+    border-radius: 6px;
+    border-color: #808595;
+    height: 38px;
+  }
+}
+
+.MuiOutlinedInput-root {
+  padding: 4px 0;
+
+  fieldset {
+    // border-radius: 0;
+    // border-color: #808595;
+  }
+}
+
+// .MuiOutlinedInput-input.MuiInputBase-input.MuiInputBase-inputAdornedEnd {
+//   padding: 8.5px 14px;
+// }
+
+.MuiFormControl-root.MuiTextField-root {
+  width: 100%;
+}
+
+.MuiDataGrid-virtualScrollerRenderZone {
+  background-color: white;
+}
+
+.MuiDataGrid-main {
+  background-color: #f8faff;
+}
+
+.MuiTablePagination-select {
+  padding-left: 24px !important;
+  padding-right: 7px !important;
+}
+
+.MuiPaper-root.MuiDrawer-paper {
+  background-color: #2a3a62;
+}
+
+.MuiDataGrid-virtualScrollerContent {
+  height: 100% !important;
+  overflow-y: auto;
+}
+
+.MuiDataGrid-columnHeader {
+  height: 29px !important;
+  line-height: 29px;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  box-shadow: 0 0 0 5px rgb(91 163 255 / 15%);
+}
+
+.MuiFormControl-root {
+  & > label {
+    right: 34px !important;
+    left: auto;
+    transform-origin: top right;
+
+    &.Mui-focused {
+      right: 34px;
+      transform-origin: top right;
+    }
+
+    .custom_input {
+      padding: 0;
+    }
+  }
+
+  legend {
+    font-size: 0.9rem !important;
+    text-align: right;
+    float: none;
+  }
+}
+
+.MuiTextField-root {
+  & > label {
+    font-size: 13px !important;
+    line-height: 1.38rem;
+    font-weight: 400;
+    color: #727583;
+  }
+}
+
+.MuiFormLabel-filled {
+  transform: translate(14px, -9px) scale(0.85) !important;
+}
+
+.MuiTablePagination-displayedRows {
+  margin: 0;
+}
+
+.MuiSelect-select {
+  padding-left: 32px;
+  padding-right: unset !important;
+}
+
+label.selectLabel {
+  background: #fff;
+  z-index: 1;
+  margin-right: 15px;
+  padding-right: 11px;
+  max-width: 50%;
+  position: relative;
+  top: 3px;
+}
+
+.MuiMenuItem-root,
+.MuiList-root > li {
+  font-family: IRANYekan !important;
+  font-size: small !important;
+}
+
+.customPagination {
+  direction: rtl;
+
+  .MuiToolbar-root {
+    padding-left: 0 !important;
+  }
+}
+
+.MuiTablePagination-actions {
+  margin-left: unset;
+  margin-right: 20px;
+
+  button {
+    transform: rotate(180deg);
+    // transform: rotate(180deg);
+  }
+}
+
+.MuiPaginationItem-previousNext {
+  transform: rotate(180deg);
+}
+
+.MuiOutlinedInput-root,
+.css-krmblu-MuiButtonBase-root-MuiMenuItem-root {
+  text-align: right;
+  font-size: 13px;
+}
+
+.MuiTabPanel-root {
+  @media only screen and (max-width: 992px) {
+    padding: 24px 0 !important;
+  }
+}
+
+button.MuiButton-root {
+  font-family: IRANYekan;
+  font-size: small;
+  margin-left: 4px;
+  border-radius: 100px;
+  box-shadow: none !important;
+}
+
+div.MuiOutlinedInput-root {
+  font-family: IRANYekan !important;
+  font-size: small;
+  padding-right: 14px;
+  background-color: #fff;
+}
+
+div.MuiCalendarPicker-root {
+  *,
+  .MuiPickersDay-root {
+    font-family: IRANYekan !important;
+    font-size: medium !important;
+  }
+
+  & > div:first-child {
+    direction: ltr;
+  }
+}
+div.MuiDialog-paper {
+  border-radius: 18px;
+  overflow: unset;
+  min-width: 350px;
+}
+div.MuiDialogContent-root {
+  overflow: unset;
+}
+.MuiFormHelperText-root {
+  text-align: right;
+  font-size: 10px !important;
+  margin-right: 4px;
+}
+
+.MUIRichTextEditor-root-1 {
+  margin-bottom: 2rem;
+}
+
+div.MUIRichTextEditor-container-2 {
+  font-family: IRANYekan;
+  font-size: 13px;
+  border: 1px solid #bbb;
+  padding: 1rem;
+}
+
+div.MUIRichTextEditor-placeHolder-9 {
+  position: relative;
+}
+
+.MuiFormHelperText-root {
+  text-align: right !important;
+  font-size: 10px !important;
+  margin-right: 4px !important;
+  font-family: "IRANYekan" !important;
+}
+
+.MuiChip-deleteIcon {
+  margin: 0 -5px 0 6px !important;
+}
+
+//modal
+
+.modalWrp {
+  font-family: "IRANYekan" !important;
+  position: fixed;
+  background-color: white;
+  padding: 20px;
+  max-height: 80vh;
+  // min-width: 550px;
+  max-width: 800px;
+  min-height: 280px;
+
+  &.large {
+    top: 10px;
+    right: 10%;
+    left: 10%;
+    bottom: 10px;
+    max-width: none;
+    max-height: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    &.large {
+      top: 10px;
+      right: 0;
+      left: 0;
+      bottom: 10px;
+      max-width: none;
+      max-height: none;
+    }
+  }
+}
+
+.modal-title {
+  font-family: "IRANYekan" !important;
+  padding: 0 13px 6px 13px;
+  border-bottom: 1px solid #ddd;
+}
+
+.modalBody {
+  font-family: "IRANYekan" !important;
+  height: calc(100% - 7px);
+  overflow: auto;
+
+  & > form,
+  & > .MuiPaper-root,
+  & > .inModal {
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+.form {
+  font-family: "IRANYekan" !important;
+  width: 100%;
+  padding: 30px 20px 10px 20px;
+  max-width: 100%;
+  // background: #fff;
+  height: calc(100% - 68px);
+}
+
+textarea {
+  white-space: pre-line;
+}
+
+.area {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: 0;
+  padding: 10px;
+  margin: 1em auto;
+  box-sizing: border-box;
+  background-color: #e8eeef;
+  color: #8a97a0;
+}
+
+.submit {
+  color: #fff;
+  margin: 1em auto;
+  background: #1abc9c;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid #16a085;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.MuiTypography-root,
+.dzu-inputLabelWithFiles,
+.MuiChip-label {
+  font-family: IRANYekan !important;
+}
+
+.dzu-previewContainer {
+  padding: 0 1rem !important;
+}
+
+.dzu-dropzone {
+  overflow: auto !important;
+  border-width: 1px !important;
+
+  svg {
+    font-size: 2rem;
+    color: #666;
+  }
+}
+
+.dzu-inputLabel {
+  font-family: IRANYekan !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+}
+
+.dzu-inputLabelWithFiles {
+  margin-right: 1rem !important;
+}
+
+.react-tagsinput-input {
+  font-family: IRANYekan !important;
+  font-weight: 400 !important;
+}
+
+.Toastify * {
+  font-family: IRANYekan !important;
+  font-weight: 400 !important;
+}
+
+.ant-upload-list-picture .ant-upload-list-item-thumbnail,
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-upload-list-picture .ant-upload-list-item,
+.ant-upload-list-picture-card .ant-upload-list-item {
+  height: 44px;
+}
+
+.ant-upload-list-item {
+  height: 32px;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.ant-upload-list-item-done {
+  background: #e2f9e8;
+  border-color: #85b985;
+}
+
+.ant-modal-title {
+  direction: ltr;
+}
+
+button.MuiButtonBase-root.MuiTab-root {
+  font-family: "IRANYekan" !important;
+  font-size: inherit !important;
+
+  &.Mui-selected {
+    color: #776dff;
+  }
+}
+
+.MuiTabs-indicator {
+  background-color: #bebaff !important;
+}
+
+.MuiTooltip-popper > div {
+  background-color: #444 !important;
+}
+
+div.grid-avatar-box {
+  background: #55bb96 !important;
+  letter-spacing: -1.5px;
+}
+
+.MuiDataGrid-filterFormOperatorInput input,
+.MuiNativeSelect-select {
+  font-family: "IRANYEKAN";
+  font-size: 13px;
+  padding: 13px;
+}
+
+.MuiDataGrid-cell {
+  border-left: 1px solid #f0f0f0;
+}
+
+.GridLoading {
+  position: absolute;
+  top: -56px;
+  right: 0;
+  left: 0;
+  z-index: 999;
+
+  .MuiLinearProgress-root {
+    height: 29px;
+    opacity: 0.2;
+  }
+}
+
+[data-field="progress"] {
+  & > div {
+    margin: auto;
+  }
+}
+
+.page {
+  height: 100%;
+  overflow: auto;
+  padding: 0 30px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .gridWrapper {
+    height: auto;
+    width: 100%;
+    text-align: right;
+    background: #fff;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+
+    &.inRtl {
+      direction: ltr;
+
+      .MuiDataGrid-cell {
+        direction: rtl;
+      }
+    }
+  }
+
+  &.dashboard {
+    background: #e9e9e900 url("../assets/images/9.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    // box-shadow: -11000px 0 100px rgba(255,255,255,0.7) inset ;
+
+    @media (max-width: 992px) {
+      overflow-y: auto;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("../assets/images/login/1.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      box-shadow: 0 50rem 130rem 0rem rgb(255 255 255 / 48%) inset;
+      position: absolute;
+      right: -10px;
+      left: -10px;
+      top: -10px;
+      bottom: -10px;
+      z-index: -1;
+      filter: blur(168px);
+    }
+  }
+}
+
+.MuiOutlinedInput-input.MuiInputBase-input.Mui-disabled {
+  color: #000 !important;
+}
+
+.MuiTablePagination-toolbar {
+  direction: rtl !important;
+}
+
+.MuiTablePagination-root {
+  margin-right: auto;
+}
+.MuiPagination-ul {
+  .MuiButtonBase-root {
+    min-width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    &.Mui-selected {
+      background-color: rgb(105, 103, 117);
+    }
+  }
+}
+.rselect.error {
+  & > div {
+    border-color: red !important;
+  }
+}
+
+.ant-upload.ant-upload-drag {
+  height: auto !important;
+  background: #f1f6ff !important;
+  border: 1px dashed #c0cfff !important;
+  padding: 6px;
+  border-radius: 15px !important;
+
+  .ant-upload {
+    padding: 0.5rem 0;
+  }
+
+  .ant-upload-drag-icon {
+    svg {
+      color: #7575f2;
+      font-size: 2rem;
+      border-radius: 4px;
+      margin-right: 1rem;
+      box-sizing: initial;
+    }
+  }
+
+  p.ant-upload-text {
+    font-size: 12px !important;
+  }
+
+  p.ant-upload-hint {
+    font-size: 12px !important;
+  }
+}
+
+.ant-upload-list-item.ant-upload-list-item-list-type-text {
+  background: #fff9f5;
+  border: 1px solid #f5c4b0;
+  direction: ltr;
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  padding: 26px;
+}
+
+.anticon svg {
+  width: 20px;
+  height: 20px;
+  color: #ff792a;
+}
+
+// buttons
+.btn-success {
+  background-color: #44ad7c;
+  border-color: #44ad7c;
+}
+.btn-info {
+  background-color: #42bbc7;
+  border-color: #42bbc7;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+//---------------------------
+.handleFit .MuiGrid-item-2 {
+  max-width: unset;
+  flex-basis: 48%;
+}
+
+// .handleFit .MuiGrid-item-6 {
+//   max-width: unset;
+//   flex-basis: 48%;
+//   &:last-child{
+//     padding-right: 1rem !important;
+//   }
+
+// }

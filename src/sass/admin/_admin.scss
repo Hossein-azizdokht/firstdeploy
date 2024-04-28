@@ -1,0 +1,109 @@
+.admin {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ddd;
+
+  &-main {
+    height: calc(100% - 0px);
+    display: flex;
+    margin: 0;
+    border-radius: 0;
+    overflow: hidden;
+
+    &.collapsed {
+      .admin-sidebar {
+        padding: 0;
+        width: 0;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &-sidebar {
+    width: 240px;
+    background: #1c2936;
+    margin: 0;
+    padding: 16px;
+    transition: all 0.1s ease-in;
+    height: calc(100vh - 40px);
+    box-sizing: border-box;
+
+    li {
+      border-bottom: 1px solid #dddddd45;
+      padding: 0.5rem 1rem;
+
+      a {
+        color: #fff !important;
+      }
+
+      &:hover {
+
+        svg,
+        a {
+          color: $base-color;
+        }
+      }
+    }
+  }
+
+  &-wrapper {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-right: 10px;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+  }
+
+  &-content {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 0;
+  }
+
+  &-topbar {
+    max-height: 40px;
+    min-height: 40px;
+    background-color: var(--navBg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    border-top-right-radius: 0;
+
+    a {
+      color: #fff !important;
+
+      &:hover {
+        color: $base-color !important;
+      }
+    }
+
+    svg {
+      font-size: 1.4rem;
+    }
+  }
+
+  &-logo {
+    margin: 2rem auto;
+    display: block;
+    width: 120px;
+  }
+}
+
+.page-toolbar {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 4px;
+}
+
+.MuiTypography-root-1,
+span[class^="MuiTypography-root-"] {
+  font-family: IRANYekan !important;
+}
+
+div[class^="MuiCardHeader-avatar"] {
+  margin-right: 0;
+  margin-left: 2px;
+}

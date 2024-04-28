@@ -1,0 +1,96 @@
+nav.navbar {
+  background-color: white !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.12);
+  .navbar-brand {
+    margin-left: 2rem;
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .navbar-collapse{justify-content: inherit;}
+  .navbar-nav {
+    .nav-item,
+    .dropdown {
+      padding: 0 15px;
+      border-left: 1px solid #ddd;
+      cursor: pointer;
+      @media only screen and (max-width:768px){
+        padding: 0.5rem 5px;
+      }
+    }
+  }
+  .dropdown {
+    padding: 0 25px;
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 15px 36px -12px rgba(0,0,0,50%);
+      border-radius: calc($base-radius/1.5);
+      padding: 12px 0;
+      animation: fadeInDown 0.2s ease-in-out forwards;
+      .dropdown-item {
+        line-height: 26px;
+        white-space: nowrap;
+        
+        @include transition(all 0.2s);
+        display: flex;
+        align-items: center;
+        &:hover {
+          background-color: #f8f8f8;
+          color: $base-color;
+          padding-right: 18px;
+          svg {
+            color: $base-color;
+          }
+        }
+        svg {
+          margin-left: 0.5rem;
+          color: #aaa;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .nav-item.nav-link.active {
+    position: relative;
+    &::before {
+      content: "";
+      width: 50%;
+      right: 50%;
+      transform: translateX(50%);
+      bottom: -15px;
+      position: absolute;
+      height: 3px;
+      background: $base-color;
+      border-radius: 10px;
+      @media only screen and (max-width: 768px) {
+        border-radius: 0;
+        width: 4px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: auto;
+      }
+    }
+  }
+  .phoneCall {
+    width: 28px;
+    height: 28px;
+    background-color: rgb(235, 243, 255);
+
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.1rem;
+    vertical-align: middle;
+    line-height: 1.3rem;
+    border-radius: 2rem;
+    margin-right: 0.2rem;
+    svg {
+      color: rgb(105, 134, 230);
+    }
+  }
+}

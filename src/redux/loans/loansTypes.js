@@ -1,0 +1,5 @@
+
+//user action types
+export const FETCH_LOANS_REQUEST = 'FETCH_LOANS_REQUEST';
+export const FETCH_LOANS_FAILURE = 'FETCH_LOANS_FAILURE';
+export const FETCH_LOANS_SUCCESS = 'FETCH_LOANS_SUCCESS';

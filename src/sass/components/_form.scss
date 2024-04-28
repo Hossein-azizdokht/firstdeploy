@@ -1,0 +1,96 @@
+form {
+  padding-top: 2rem;
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    border-radius: 8px;
+    margin-top: 4px;
+    padding: 10px;
+    border-color: rgba(0, 0, 0, 0.23) !important;
+  }
+}
+
+.hasEndMark {
+  & > div {
+    &:after {
+      position: absolute;
+      padding: 4px 8px;
+      color: #aaa;
+      background: #ededed;
+      top: 4px;
+      bottom: 4px;
+      left: 4px;
+      border-radius: 4px;
+    }
+  }
+  &.rials {
+    & > div {
+      &:after {
+        content: "ریال";
+      }
+    }
+  }
+}
+
+.filterWrp {
+  margin: 1rem 0 0.3rem;
+  background: #f8faff;
+  border-radius: 6px;
+  border: 1px solid #e6eaff;
+  transition: all 0.1s linear;
+  max-height: 400px;
+  transform: scale(1);
+  padding: 0.5rem;
+
+  .MuiTextField-root > label {
+    font-size: 13px !important;
+    line-height: 1.2rem;
+  }
+
+  // input {
+  //   padding: 3px 14px;
+  // }
+
+  &.collapsed {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transform: scale(0.95);
+  }
+}
+
+.detailList {
+  li {
+    margin: 0;
+    padding: 4px;
+    display: flex;
+
+    span {
+      border-radius: 3px;
+    }
+
+    span:first-child {
+      background-color: #eaf0f9;
+      padding: 6px;
+      width: 120px;
+      min-width: 120px;
+      margin-left: 5px;
+      display: inline-block;
+    }
+
+    span:last-child {
+      background-color: #f7f9fd;
+      padding: 6px;
+      flex-grow: 1;
+      overflow: auto;
+    }
+  }
+}
+
+.code {
+  direction: ltr;
+  text-align: left !important;
+}
